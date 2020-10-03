@@ -3,63 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <title>Test Page: Don't Panic</title>
+    <style>
+      li > a {
+        color: blue;
+      }
+      div,
+      li {
+        border: 1px solid black;
+      }
+      #exec-bio {
+        background-color: lightgray;
+      }
+      .bio-box {
+        border: 1px solid black;
+      }
+      .bio-box > a {
+        color: green;
+      }
+      #prominent {
+        background-color: orange;
+      }
+      .sidebar-link {
+        background-color: azure;
+      }
+    </style>
   </head>
   <body>
     <h1>I'm an h1</h1>
     <ul>
-      <li>
-        <a
-          href="https://www.example.com/"
-          rel="noopener"
-          target="_blank"
-          style="color: red;"
+      <li class="sidebar-link">
+        <a href="https://www.example.com/" rel="noopener" target="_blank"
           >Link</a
         >
       </li>
-      <li>
-        <a
-          href="https://www.example.com/"
-          rel="noopener"
-          target="_blank"
-          style="color: red;"
+      <li class="sidebar-link">
+        <a href="https://www.example.com/" rel="noopener" target="_blank"
           >Link</a
         >
       </li>
-      <li>
-        <a
-          href="https://www.example.com/"
-          rel="noopener"
-          target="_blank"
-          style="color: red;"
+      <li class="sidebar-link">
+        <a href="https://www.example.com/" rel="noopener" target="_blank"
           >Link</a
         >
       </li>
     </ul>
     <h2>I'm an h2</h2>
-    <div style="border: 1px solid black;">
-      <a
-        href="https://example.com/"
-        rel="noopener"
-        target="_blank"
-        style="color: green;"
+    <div id="exec-bio" class="bio-box">
+      <a href="https://example.com/" rel="noopener" target="_blank"
         >I'm a link</a
       >
     </div>
-    <div style="border: 1px solid black;">
+    <div class="bio-box">
       <a
+        id="prominent"
         href="https://example.com/"
         rel="noopener"
         target="_blank"
-        style="color: green;"
         >I'm a link</a
       >
     </div>
-    <div style="border: 1px solid black;">
-      <a
-        href="https://example.com/"
-        rel="noopener"
-        target="_blank"
-        style="color: green;"
+    <div class="bio-box">
+      <a href="https://example.com/" rel="noopener" target="_blank"
+        >I'm a link</a
+      >
+    </div>
+    <div class="bio-box">
+      <a href="https://example.com/" rel="noopener" target="_blank"
         >I'm a link</a
       >
     </div>
