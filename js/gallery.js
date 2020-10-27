@@ -7,8 +7,12 @@ function activateGallery() {
 
   thumbnails.forEach(function (thumbnail) {
     thumbnail.addEventListener("click", function () {
-      // set clicked image as main image.
+      // Preload large images
       let newImageSrc = thumbnail.dataset.largeVersion;
+      let largeVersion = new Image();
+      largeVersion.src = newImageSrc;
+
+      // set clicked image as main image.
       mainImage.setAttribute("src", newImageSrc);
       mainImage.setAttribute("alt", thumbnail.alt);
 
